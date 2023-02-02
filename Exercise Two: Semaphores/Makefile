@@ -1,11 +1,11 @@
-#Name:			Filip Rusiecki	= 
+#Name:			Filip Rusiecki	=
 #Date:			02/02/2023	=
 #Student Number:	C00250721	=
 #========================================
 #Makefile used to contain commands to compile projects
 #=====================================================
 
-OBJFILES= helloThreads.o
+OBJFILES= main.o Semaphore.o
 CC=g++
 CFLAGS= -std=c++11 -pthread
 
@@ -13,8 +13,8 @@ CFLAGS= -std=c++11 -pthread
 %.o: %.cpp
 	$(CC) -c -o $@ $< $(CFLAGS) $(DEBUGFLAGS)
 
-ALL: helloThreads.o
-	$(CC) -o helloThreads $(OBJFILES) $(CFLAGS) $(DEBUGFLAGS)
+ALL: Semaphore.o
+	$(CC) -o Semaphore $(OBJFILES) $(CFLAGS) $(DEBUGFLAGS)
 
 
 DEBUG: DEBUGFLAGS = -g -00
