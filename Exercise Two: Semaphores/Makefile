@@ -6,19 +6,19 @@
 #=====================================================
 
 OBJFILES= main.o Semaphore.o
+OUTPUT= Semaphore.out
 CC=g++
 CFLAGS= -std=c++11 -pthread
+DEBUGFLAGS =
 
 #This rule says that each .o file depends on a .cpp file of the same name
 %.o: %.cpp
 	$(CC) -c -o $@ $< $(CFLAGS) $(DEBUGFLAGS)
 
-ALL: Semaphore.o
-	$(CC) -o Semaphore $(OBJFILES) $(CFLAGS) $(DEBUGFLAGS)
+ALL: $(OBJFILES)
+	$(CC) -o $(OUTPUT) $(OBJFILES) $(CFLAGS) $(DEBUGFLAGS)
+	make CLEAN
 
-
-DEBUG: DEBUGFLAGS = -g -00
-DEBUG: ALL
 
 
 #this is customary and just deletes all .o files
