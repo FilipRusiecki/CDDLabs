@@ -27,3 +27,4 @@ DEBUG: ALL
 #this is customary and just deletes all .o files
 CLEAN:
 	rm *.o
+	rm -f$(OBJECTFILES)
