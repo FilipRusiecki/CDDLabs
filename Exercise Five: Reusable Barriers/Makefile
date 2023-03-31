@@ -19,6 +19,7 @@ ALL: $(OBJFILES)
 	$(CC) -o $(OUTPUT) $(OBJFILES) $(CFLAGS) $(DEBUGFLAGS)
 	make CLEAN
 
+#Debug Rule
 DEBUG: DEBUGFLAGS
 DEBUG: ALL
 
@@ -26,4 +27,5 @@ DEBUG: ALL
 
 #this is customary and just deletes all .o files
 CLEAN:
+	#forces to remove o files
 	rm -f$(OBJFILES)

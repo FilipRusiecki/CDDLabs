@@ -7,7 +7,8 @@ Date: 	31/03/2023
 	main.cpp - contains main 
 	Makefile - is ran to demonstrate the lab
 	Readme - contains all the info about the lab
-	Semaphore.cpp .h - semaphore file for signaling
+	Semaphore.cpp - semaphore file for signaling
+	Semaphore.h - semaphore class
 	html - Doxygen files
 	latex - Doxygen files
 	Doxyfile - Doxygen

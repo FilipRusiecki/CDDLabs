@@ -5,6 +5,8 @@
 #Makefile used to contain commands to compile projects
 #=====================================================
 
+
+#global variables
 OBJFILES= main.o Semaphore.o
 OUTPUT= Semaphore.out
 CC=g++

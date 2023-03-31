@@ -5,6 +5,8 @@
 #Makefile used to contain commands to compile projects
 #=====================================================
 
+
+#global variables
 OBJFILES= main.o Semaphore.o
 OUTPUT= Semaphore.out
 CC=g++
@@ -19,6 +21,8 @@ ALL: $(OBJFILES)
 	$(CC) -o $(OUTPUT) $(OBJFILES) $(CFLAGS) $(DEBUGFLAGS)
 	make CLEAN
 
+
+#Debug Rule
 DEBUG: DEBUGFLAGS
 DEBUG: ALL
 
