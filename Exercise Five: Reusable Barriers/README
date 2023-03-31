@@ -1,20 +1,20 @@
-## Author:	Filip Rusiecki 
-Date: 	16/03/2023
-
-
-
-
-The **README** file is a text filw that explains what a project is.
-It should contain information on
-
-1. Project Licence
-3. How to install project
-4. List of any required Libraries, platform issues, etc.
-5. TO DO section listing items that need to be completed (errors, missing features etc.)
-6. List of files and what they contain
-7. Any other relevent information
-
-
+Date: 	31/03/2023
+1. Apache License 2.0 
+2. Filip Rusiecki  
+3. Download from github, run the make file if needed then run the ./main.out file
+4. You need C++,
+5. List of files and what they contain
+	Barrier.cpp - contains Barrier code
+	Barrier.h - barrier class
+	main.cpp - contains main 
+	Makefile - is ran to demonstrate the lab
+	Readme - contains all the info about the lab
+	Semaphore.cpp .h - semaphore file for signaling
+	signal.cpp - created file by the makefile  
+	html - Doxygen files
+	latex - Doxygen files
+	Doxyfile - Doxygen
+6. Any other relevent information
                                  Apache License
                            Version 2.0, January 2004
                         http://www.apache.org/licenses/
