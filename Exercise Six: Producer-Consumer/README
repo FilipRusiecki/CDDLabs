@@ -4,12 +4,12 @@ Date: 	31/03/2023
 3. Download from github, run the make file if needed then run the ./main.out file
 4. You need C++,
 5. List of files and what they contain
-	Barrier.cpp - contains Barrier code
-	Barrier.h - barrier class
 	main.cpp - contains main 
 	Makefile - is ran to demonstrate the lab
 	Readme - contains all the info about the lab
-	Semaphore.cpp .h - semaphore file for signaling
+	Semaphore.cpp - semaphore file for signaling
+	Semaphore.h - semaphore class
+	SafeBuffer.h - safebuffer class
 	signal.cpp - created file by the makefile  
 	html - Doxygen files
 	latex - Doxygen files

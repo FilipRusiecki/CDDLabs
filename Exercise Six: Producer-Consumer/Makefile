@@ -5,7 +5,7 @@
 #Makefile used to contain commands to compile projects
 #=====================================================
 
-OBJFILES= main.o Semaphore.o Barrier.o
+OBJFILES= main.o Semaphore.o
 OUTPUT= main.out
 CC=g++
 CFLAGS= -std=c++11 -pthread -g -Wall

@@ -1,4 +1,3 @@
-#include "Barrier.h"
 #include "Event.h"
 #include <iostream>
 #include <thread>
@@ -44,9 +43,8 @@ int main(void){
   std::vector<std::thread> vt(num_threads);
   std::shared_ptr<SafeBuffer<std::shared_ptr<Event>> aBuffer( new Buffer<shared_ptr Event>(size));
   /**< Launch the threads  */
-  int i=0;
   for(std::thread& t: vt){
-    t=std::thread(updateTask,aBarrier,10);
+    t=std::thread(updateTask,aBaffer,10);
   }
   /**< Join the threads with the main thread */
   for (auto& v :vt){
