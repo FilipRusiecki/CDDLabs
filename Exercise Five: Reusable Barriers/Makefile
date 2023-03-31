@@ -1,12 +1,12 @@
 #Name:			Filip Rusiecki	=
-#Date:			30/03/2023	=
+#Date:			31/03/2023	=
 #Student Number:	C00250721	=
 #========================================
 #Makefile used to contain commands to compile projects
 #=====================================================
 
-OBJFILES= main.o Semaphore.o
-OUTPUT= Semaphore.out
+OBJFILES= main.o Semaphore.o Barrier.o
+OUTPUT= main.out
 CC=g++
 CFLAGS= -std=c++11 -pthread -g -Wall
 DEBUGFLAGS = -DEBUG
@@ -26,5 +26,4 @@ DEBUG: ALL
 
 #this is customary and just deletes all .o files
 CLEAN:
-	rm *.o
-	rm -f$(OBJECTFILES)
+	rm -f$(OBJFILES)
